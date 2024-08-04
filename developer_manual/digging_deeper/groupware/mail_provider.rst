@@ -160,7 +160,7 @@ Step 2: Create a Mail Service Class
 
 The mail service class is the main class that other apps use to access mail functionality in your app. This class is also returned by the mail provider class.
 
-This class needs to implement the `IService` interface and have all the required methods defined. Because functionality varies between protocols this class also needs to be extened with the appropriate supported function interfaces like 'IMessageSend' which provides mail sending capabilities.  
+This class needs to implement the `IService` interface and have all the required methods defined. Because functionality varies between protocols this class also needs to be extended with the appropriate supported function interfaces like 'IMessageSend' which provides mail sending capabilities.  
 
 .. code-block:: php
     
@@ -203,7 +203,7 @@ This class needs to implement the `IService` interface and have all the required
             // app specific code to create a fresh message e.g message object to send a message or save a message in drafts
         }
 
-        // this function is the extened capabilities added to this class from IMessageSend
+        // this function is the extended capabilities added to this class from IMessageSend
         public function sendMessage(IMessage $message, array $option = []): void {
             // app specific code to send a message
         }
@@ -214,7 +214,7 @@ This class needs to implement the `IService` interface and have all the required
 Step 3: Register the Mail Provider
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The registration is performed at the initail stages of your app being loaded by the Nextcloud system, inside the 'AppInfo/Application.php'
+The registration is performed at the initial stages of your app being loaded by the Nextcloud system, inside the 'AppInfo/Application.php'
 
 .. code-block:: php
     
