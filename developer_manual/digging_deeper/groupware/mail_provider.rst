@@ -1,5 +1,5 @@
 
-.. _calendar-providers:
+.. _mail-providers:
 
 ========================================
 Mail Provider Interface
